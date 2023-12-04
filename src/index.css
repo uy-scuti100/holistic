@@ -82,7 +82,7 @@
   }
 
   .herobg {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/holding.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/holding.jpg");
     @apply bg-center bg-cover bg-no-repeat
   }
 
@@ -91,10 +91,126 @@
   }
 
   .wideness {
-    max-width: 1440px @apply mx-auto
+    max-width: 1440px;
+    @apply mx-auto
   }
 
   body {
     @apply text-white bg-black;
+  }
+}
+
+/* animations */
+
+
+.hero-para {
+  overflow: hidden;
+  animation: hero 1s ease;
+}
+
+.hero-header {
+  overflow: hidden;
+  animation: hero2 1s ease;
+}
+
+.nav-anime {
+  overflow: hidden;
+  animation: nav 1.5s ease;
+}
+
+.buttons-anime {
+  overflow: hidden;
+  animation: link 1.5s ease;
+}
+
+.mainSlider .swiper-pagination-bullets {
+  bottom: 1.5rem;
+}
+
+.mainSlider .swiper-pagination-bullet,
+.productSlider .swiper-pagination-bullet {
+  background: #E4C953;
+}
+
+.productSlider .swiper-button-prev::after {
+  font-size: 2rem;
+}
+
+.productSlider .swiper-button-prev::after,
+.productSlider .swiper-button-next::after {
+  font-size: 2rem;
+  color: #E4C953;
+  padding: 1rem;
+  width: 300px;
+}
+
+
+/* animations */
+
+@keyframes link {
+
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+}
+
+@keyframes animateIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@keyframes nav {
+
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes hero {
+
+  0% {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero2 {
+
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

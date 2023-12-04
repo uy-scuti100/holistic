@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { RiThreadsLine } from "react-icons/ri";
 

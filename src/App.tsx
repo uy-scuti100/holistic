@@ -17,7 +17,7 @@ export default function App() {
             <HeroSection />
             <Showcase />
             <Services />
-            {/* <Testimonials /> */}
+            <Testimonials />
             <Discover />
             <Faq />
             <Newsletter />

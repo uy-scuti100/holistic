@@ -25,6 +25,7 @@ module.exports = {
             border: "hsl(var(--border))",
             gold: "#E4C953",
             black: "#000000",
+            ash: "#818181",
             white: "#F4F2EC",
             input: "hsl(var(--input))",
             ring: "hsl(var(--ring))",

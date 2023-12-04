@@ -1,8 +1,8 @@
 export default function Discover() {
    return (
-      <section className="flex flex-col items-center justify-center w-full gap-20 mx-auto wideness md:flex-row pad ">
+      <section className="flex flex-col justify-center w-full gap-20 mx-auto pt-36 wideness md:flex-row pad ">
          <div>
-            <h2 className="text-4xl text-center md:text-left grote md:text-5xl leading-[50px] font-bold pt-36">
+            <h2 className="text-4xl text-center md:text-left grote md:text-5xl leading-[50px] font-bold">
                Discover Holistic <span className="text-gold">Wellness</span>{" "}
                Solutions
             </h2>
@@ -17,9 +17,9 @@ export default function Discover() {
                </button>
             </div>
          </div>
-         <div className="h-[500px] md:w-[800px] w-[400px] rounded">
+         <div className="h-[500px] md:w-[800px] w-[400px] rounded border border-gold">
             <video
-               src="/public/discovery.mp4"
+               src="/discovery.mp4"
                autoPlay
                controls
                loop
